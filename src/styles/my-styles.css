@@ -1,0 +1,163 @@
+.gradiant-effect {
+  border-radius: 57% 43% 63% 37% / 34% 33% 67% 66%;
+  animation: radiusEffect 8s infinite linear;
+}
+
+@keyframes radiusEffect {
+  0% {
+    border-radius: 57% 43% 63% 37% / 34% 33% 67% 66%;
+  }
+  25% {
+    border-radius: 79% 21% 76% 24% / 76% 71% 29% 24%;
+  }
+  50% {
+    border-radius: 24% 76% 76% 24% / 17% 75% 25% 83%;
+  }
+  75% {
+    border-radius: 46% 54% 32% 68% / 51% 47% 53% 49%;
+  }
+  100% {
+    border-radius: 57% 43% 63% 37% / 34% 33% 67% 66%;
+  }
+}
+
+.marquee {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 5s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+.ant-checkbox-checked .ant-checkbox-inner {
+  @apply border-white bg-gray-600;
+}
+
+.apexcharts-legend {
+  flex-direction: column;
+}
+.apexcharts-legend .apexcharts-legend-series {
+  width: max-content;
+}
+
+.apexcharts-legend-row .apexcharts-legend {
+  flex-direction: row;
+  gap: 16px;
+}
+/* .apexcharts-legend-row .apexcharts-legend .apexcharts-legend-series {
+  @apply border border-green-500 py-1 px-3 rounded;
+} */
+
+.svg {
+  margin: auto;
+}
+.svg svg {
+  width: 792px;
+  height: 516px;
+}
+.svg svg .active {
+  @apply fill-[#ff9933];
+}
+.svg svg .active2 {
+  @apply fill-[#ff9933];
+}
+.svg svg path {
+  cursor: pointer;
+  transition: all 0.3s linear;
+  stroke-width: 1px;
+  @apply fill-[#0099cc] stroke-white;
+}
+.svg svg text {
+  letter-spacing: 2px;
+  transition: all 0.3s linear;
+  font-size: 12px;
+  @apply stroke-gray-100;
+}
+.svg svg text.active {
+  @apply stroke-white;
+}
+.svg svg text.active2 {
+  @apply stroke-white;
+}
+.more-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.driver-popover.driverjs-theme {
+  background-color: #fde047;
+  color: #000;
+}
+
+.driver-popover.driverjs-theme .driver-popover-title {
+  font-size: 20px;
+}
+
+.driver-popover.driverjs-theme .driver-popover-title,
+.driver-popover.driverjs-theme .driver-popover-description,
+.driver-popover.driverjs-theme .driver-popover-progress-text {
+  color: #000;
+}
+
+.driver-popover.driverjs-theme button {
+  flex: 1;
+  text-align: center;
+  background-color: #000;
+  color: #ffffff;
+  border: 2px solid #000;
+  text-shadow: none;
+  font-size: 14px;
+  padding: 5px 8px;
+  border-radius: 6px;
+}
+
+.driver-popover.driverjs-theme button:hover {
+  background-color: #000;
+  color: #ffffff;
+}
+
+.driver-popover.driverjs-theme .driver-popover-navigation-btns {
+  justify-content: space-between;
+  gap: 3px;
+}
+
+.driver-popover.driverjs-theme .driver-popover-close-btn {
+  color: #9b9b9b;
+}
+
+.driver-popover.driverjs-theme .driver-popover-close-btn:hover {
+  color: #000;
+}
+
+.driver-popover.driverjs-theme .driver-popover-arrow-side-left.driver-popover-arrow {
+  border-left-color: #fde047;
+}
+
+.driver-popover.driverjs-theme .driver-popover-arrow-side-right.driver-popover-arrow {
+  border-right-color: #fde047;
+}
+
+.driver-popover.driverjs-theme .driver-popover-arrow-side-top.driver-popover-arrow {
+  border-top-color: #fde047;
+}
+
+.driver-popover.driverjs-theme .driver-popover-arrow-side-bottom.driver-popover-arrow {
+  border-bottom-color: #fde047;
+}
