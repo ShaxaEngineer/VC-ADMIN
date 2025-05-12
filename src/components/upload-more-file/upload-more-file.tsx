@@ -41,7 +41,7 @@ export const UploadMoreFile: React.FC<UploadMoreFileProps> = ({
     setisLoading(true);
     const data = new FormData();
     data.append('file', file.target.files[0]);
-    fetch(`${baseUrl}files/create`, {
+    fetch(`${baseUrl}/files/create`, {
       method: 'POST',
       headers: {
         Authorization: `Bearer ${getLocalStorage(token)}`,
