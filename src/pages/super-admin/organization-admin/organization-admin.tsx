@@ -238,6 +238,7 @@ export const OrganizationAdmin = () => {
             title={t('Ism')}
             placeholder={t('Ismni kiriting')}
             size={'large'}
+            required={true}
           />
           {/* employer_last_name */}
           <InputControl
@@ -246,6 +247,7 @@ export const OrganizationAdmin = () => {
             title={t('Familya')}
             placeholder={t('Familyani kiriting')}
             size={'large'}
+            required={true}
           />
           {/* employer_position */}
           <InputControl
